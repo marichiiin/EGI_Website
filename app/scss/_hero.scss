@@ -1,0 +1,46 @@
+.hero {
+  //position: relative;
+  background-color: $primary_color_two;
+  &__content {
+    position: relative;
+    line-height: 1.2;
+
+    h1 {
+      letter-spacing: 2px;
+      font-size: 34px;
+      font-weight: 800;
+      padding-bottom: 40px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      big {
+        //font-size: 36px;
+        color: $secondary_color;
+        font-weight: 800;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      padding-bottom: 40px;
+    }
+  }
+  &__image {
+    position: relative;
+    background-image: none;
+    flex: 1;
+    margin: 0;
+    height: 25rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/hero-image.png");
+      background-repeat: no-repeat;
+      background-position: 10% 32%;
+      width: 190%;
+      height: 140%;
+      background-size: 70%;
+      top: -26%;
+    }
+  }
+}

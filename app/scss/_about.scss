@@ -1,0 +1,38 @@
+.about {
+  background-color: $primary_color_two;
+  height: 100%;
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  &__mission,
+  &__vission {
+    h1 {
+      color: $accent_color_two;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  &__mission {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  &__vission {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  &__logo {
+    display: none;
+  }
+  &__socials {
+    flex-direction: column;
+    text-align: left;
+    a {
+      padding: 10px;
+    }
+  }
+}

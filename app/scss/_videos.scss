@@ -1,0 +1,14 @@
+.videos {
+  padding-bottom: 20px;
+  h1 {
+    padding-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    margin: 0 auto;
+    video {
+      width: 350px;
+      height: 200px;
+    }
+  }
+}

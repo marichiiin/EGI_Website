@@ -1,0 +1,69 @@
+// FLEXBOX
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+.ta-c {
+  text-align: center;
+}
+
+// SOCIALS
+.socials {
+  margin: 0 auto;
+  display: inline-flex;
+  a {
+    position: relative;
+    svg {
+      margin: 10px;
+    }
+  }
+}
+.center {
+  &--vertically {
+    margin: auto 0;
+  }
+  &--horizontally {
+    margin: 0 auto;
+  }
+}
+.container {
+  //position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// BUTTONS
+.btn {
+  display: inline-block;
+  padding: 10px 45px;
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  border: none;
+}
+
+.red_btn {
+  background-color: $accent_color_one;
+  color: $primary_color_one;
+}
+
+.white_btn {
+  color: $accent_color_one;
+  background-color: $primary_color_one;
+}

@@ -1,0 +1,86 @@
+//ACTIVE STATE
+.active {
+  color: $accent_color_one;
+  padding-bottom: 5px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-bottom: $accent_color_one solid 3px;
+}
+
+// OPENING OF BURGER
+.header {
+  &.open {
+    .header__burger {
+      > div:first-child {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      > div:nth-child(2) {
+        opacity: 0;
+      }
+      > div:last-child {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+  }
+  &__burger:hover {
+    cursor: pointer;
+  }
+}
+
+// SLIDING ANIMATION
+
+.slide-in {
+  animation: slide-in 500ms ease-in forwards;
+}
+.slide-out {
+  animation: slide-out 500ms ease-out forwards;
+}
+
+// NO SCROLL
+.noscroll-horizontally {
+  overflow: hidden;
+}
+
+// HOVER OVER LINKS
+a {
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: $accent_color_one;
+    font-weight: 600;
+  }
+}
+.btn {
+  transition: background-color 300ms ease-in-out;
+}
+.red_btn:hover {
+  background-color: $primary_color_one;
+  color: $accent_color_one;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.white_btn:hover {
+  background-color: $accent_color_one;
+  color: $primary_color_one;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+// HOVER OVER SOCIAL ICONS
+.socials {
+  a {
+    svg path,
+    svg ellipse {
+      transition: fill 150ms ease-in-out;
+    }
+
+    &:hover svg ellipse {
+      fill: $accent_color_one;
+    }
+
+    &:hover svg path {
+      fill: $primary_color_one;
+    }
+  }
+}

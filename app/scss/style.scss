@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+@import "global";
+@import "helper";
+@import "animations";
+
+@import "state";
+
+//index.html
+@import "header";
+@import "hero";
+@import "videos";
+@import "intro";
+
+//course.html
+@import "programs";
+@import "price";
+@import "procedure&guidelines";
+
+//about.html
+@import "about";
+
+//contact.html
+@import "contact";
+
+@import "footer";
+
+@import "mediaQueries";

@@ -1,0 +1,41 @@
+.proGui {
+  &__procedure {
+    padding: 20px;
+  }
+  &__guidelines {
+    padding: 20px;
+  }
+  &__header {
+    color: $secondary_color;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+  &__orderedList {
+    li {
+      font-size: 1.2rem;
+      list-style: upper-roman;
+      font-weight: 500;
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  &__unorderedList {
+    > li {
+      font-size: 1.2rem;
+      list-style: disc;
+      font-weight: 500;
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+      ul {
+        padding-left: 8%;
+
+        li {
+          list-style: circle;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  background-color: $primary_color_three;
+
+  &__cta {
+    padding-bottom: 20px;
+
+    &__tagline {
+      color: $accent_color_one;
+      font-size: 1rem;
+      padding-bottom: 20px;
+    }
+    &__headline {
+      color: $primary_color_two;
+      font-size: 1rem;
+      padding-bottom: 20px;
+      big {
+        color: $accent_color_two;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+  &__logoandsocial {
+    position: relative;
+    img {
+      width: 150px;
+    }
+  }
+}
